@@ -21,10 +21,10 @@ RUN DEBIAN_FRONTEND=noninteractive git clone https://github.com/checkmatey/check
 
 # Git config
 ### CONFIG ###
-ENV GITHUB_EMAIL="YOUR EMAIL"
-ENV GITHUB_USER="YOUR USERNAME"
-ENV GITHUB_TOKEN="YOUR TOKEN"
-ENV GITHUB_REPO="data"
+ENV GITHUB_EMAIL="YOUR_MAIL"
+ENV GITHUB_USER="YOUR_USERNAME"
+ENV GITHUB_TOKEN="YOUR_TOKEN"
+ENV GITHUB_REPO="YOUR_REPO"
 # Set up git congif
 ENV GITHUB_URL="github.com/${GITHUB_USER}/${GITHUB_REPO}.git"
 RUN git config --global user.email $GITHUB_EMAIL
